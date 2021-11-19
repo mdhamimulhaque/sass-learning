@@ -1,0 +1,24 @@
+// =========== if, else, else if ===============
+@mixin setFontSize($value) {
+    @if $value == small{
+        font-size: 10px;
+    }
+    @else if $value == medium{
+        font-size: 22px;
+    }
+    @else if $value == large{
+        font-size: 26px;
+    }
+    @else{
+        font-size: none;
+    }
+    
+}
+
+
+.if-else{
+    margin: 20px 0px;
+    text-align: center;
+    padding: 0px 50px;
+    @include setFontSize(large); //--------- include
+}

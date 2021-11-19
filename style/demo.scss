@@ -1,0 +1,132 @@
+//================ import & partials ============
+
+//----------- partial is underscore (_), when i used it before SCSS file ( _reset.scss )
+
+/* we can use small work with external file like (Reset.scss). when we use underscore(_) before file name that's mean, no need to convert this small work scss to css . After import we just need to use name (no need UNDERSCORE & EXTeNSION) */
+
+@import "reset";
+@import "variables";
+@import "if-else";
+
+
+
+// ======== Nesting ==========
+nav{
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            list-style: none;
+            margin: 20px;
+            a{
+               text-decoration: none;
+               color: #000;
+               padding: 8px;
+               transition: .5s;
+            }
+            a:hover{
+                background: #000;
+                color:#77E4D4
+            }
+        }
+    }
+}
+
+// ========= mixin & include ============
+
+@mixin section-paragraph { //--------common style --------
+    padding: 20px;
+    text-align: center;
+    font-size: 18px
+}
+
+.sec-1 p{
+    @include section-paragraph; //-------- common style include ------
+    color:white
+}
+.sec-2 p{
+    @include section-paragraph; //-------- common style include ------
+    color:red
+}
+
+//============= variable declare with mixin & include =====================
+
+@mixin section-heading($fontSize,$color,$align,$padding) {
+    font-size: $fontSize;
+    color:$color;
+    text-align: $align;
+    padding: $padding;
+}
+
+.sec-1 h4{
+    @include section-heading(22px, red,  center, 5px)
+}
+.sec-2 h4{
+    @include section-heading(26px, blue,  right, 5px)
+}
+
+// ====== extend & inheritance =================
+.btn{
+   padding: 10px;
+   margin-top: 10px;
+   cursor: pointer;
+   color:greenyellow;
+}
+
+.readMore-button{
+    @extend .btn;
+    background: #000;
+}
+.download-button{
+  @extend .btn;
+  background:indigo;
+}
+
+//============ loop =======================
+/* 1) from 1 to 6 (output: 012345);
+   2) from 1 through 6 (output: 0123456);
+*/
+
+//----------------- for loop ---------------------
+
+// @for $i from 1 through 5{
+//     .loop-#{$i}{
+//       width:100px * $i;
+//       background: darken(pink, $i * 10);
+//       padding:10px;
+//     }
+// };
+
+//-------------------- while loop -----------------
+
+$i : 1;
+@while $i < 6{
+    .loop-#{$i}{
+        width:100px * $i;
+        background: darken(pink, $i * 10);
+        padding:10px;
+    }
+    $i : $i + 1;
+};
+
+
+// ============== each =============
+// @each $color in red, green, blue{
+//     .#{$color}-text{
+//         color: $color;
+//     }
+// };
+
+// ----------- another way -----------
+$colors:(
+    color1: red,
+    color2: blue,
+    color3: green,
+);
+
+@each $name, $color in $colors{
+  .#{$color}-text{
+      color: $color;
+  }
+}

@@ -1,0 +1,19 @@
+// ======== variable declare ==============
+$header-bgColor : #77E4D4;
+$sec1-bgColor:orange;
+$sec2-bgColor:#FBF46D;
+$footer-bgColor : #B4FE98;
+
+header{
+    background:$header-bgColor;
+}
+
+.sec-1{
+    background: $sec1-bgColor;
+}
+.sec-2{
+    background: $sec2-bgColor;
+}
+footer{
+    background:$footer-bgColor;
+}

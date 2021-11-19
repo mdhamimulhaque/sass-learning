@@ -1,0 +1,149 @@
+/* we can use small work with external file like (Reset.scss). when we use underscore(_) before file name that's mean, no need to convert this small work scss to css . After import we just need to use name (no need UNDERSCORE & EXTeNSION) */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background: #77E4D4;
+}
+
+.sec-1 {
+  background: orange;
+}
+
+.sec-2 {
+  background: #FBF46D;
+}
+
+footer {
+  background: #B4FE98;
+}
+
+.if-else {
+  margin: 20px 0px;
+  text-align: center;
+  padding: 0px 50px;
+  font-size: 26px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 8px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+nav ul li a:hover {
+  background: #000;
+  color: #77E4D4;
+}
+
+.sec-1 p {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+.sec-2 p {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: red;
+}
+
+.sec-1 h4 {
+  font-size: 22px;
+  color: red;
+  text-align: center;
+  padding: 5px;
+}
+
+.sec-2 h4 {
+  font-size: 26px;
+  color: blue;
+  text-align: right;
+  padding: 5px;
+}
+
+.btn, .readMore-button, .download-button {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: greenyellow;
+}
+
+.readMore-button {
+  background: #000;
+}
+
+.download-button {
+  background: indigo;
+}
+
+/* 1) from 1 to 6 (output: 012345);
+   2) from 1 through 6 (output: 0123456);
+*/
+.loop-1 {
+  width: 100px;
+  background: #ff8da1;
+  padding: 10px;
+}
+
+.loop-2 {
+  width: 200px;
+  background: #ff5a77;
+  padding: 10px;
+}
+
+.loop-3 {
+  width: 300px;
+  background: #ff274d;
+  padding: 10px;
+}
+
+.loop-4 {
+  width: 400px;
+  background: #f3002a;
+  padding: 10px;
+}
+
+.loop-5 {
+  width: 500px;
+  background: #c00022;
+  padding: 10px;
+}
+
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.green-text {
+  color: green;
+}
+/*# sourceMappingURL=demo.css.map */
