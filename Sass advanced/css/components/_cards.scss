@@ -1,0 +1,23 @@
+
+.card{
+    display: block;
+    padding:$base-padding;
+    border: 1px solid map-get($colors, "primary");
+    box-shadow: $base-box-shadow;
+    margin: $base-margin;
+ 
+    .card-title{
+        font-size: $base-font-size;
+        padding-bottom: $base-padding;
+        font-weight: 600;
+    }
+    .card-title{
+        font-size:$font-size-lg;
+        color: map-get($colors, "primary" );
+    }
+    a{
+        text-decoration:underline;
+        color:$primary;
+    }
+}
+

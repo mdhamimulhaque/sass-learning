@@ -1,0 +1,42 @@
+
+// =========== colors =========
+$primary : #22BABB;
+$info : #9EF8EE;
+$secondary :#F24405;
+$orange : #FA7F08;
+$white: #fff;
+$danger:#F21326;
+$success:#038C3E;
+
+// =========== colors palate ===============
+$colors:(
+    "primary" : $primary,
+    "info" : $info,
+    "secondary" : $secondary,
+    "dark" : #252620,
+    "light-gray" : #D9D9D9,
+    "danger" : $danger,
+    "white" : $white,
+    "blue" : blue,
+    "warning" : #DBF227,
+);
+
+
+// ======== spacing =========
+$base-padding:0.75rem;
+$base-margin:0.75rem;
+
+// ========== border ===========
+$base-border-radius:20px;
+
+
+// ========== box shadow ===========
+$base-box-shadow: 1px 3px 5px map-get($colors , "primary");
+
+// ========== font size ===========
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xll: $base-font-size * 3;
+
