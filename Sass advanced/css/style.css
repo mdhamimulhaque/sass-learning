@@ -30,6 +30,55 @@ li {
   list-style: none;
 }
 
+@media (min-width: 0px) {
+  .breakponts-text-with-mixin {
+    color: red;
+  }
+}
+
+@media (min-width: 576px) {
+  .breakponts-text-with-mixin {
+    color: blue;
+  }
+}
+
+@media (min-width: 768px) {
+  .breakponts-text-with-mixin {
+    color: yellow;
+  }
+}
+
+@media (min-width: 992px) {
+  .breakponts-text-with-mixin {
+    color: green;
+  }
+}
+
+@media (min-width: 1200px) {
+  .breakponts-text-with-mixin {
+    color: hotpink;
+  }
+}
+
+@media (min-width: 1400px) {
+  .breakponts-text-with-mixin {
+    color: skyblue;
+  }
+}
+
+@media (min-width: 1600px) {
+  .breakponts-text-with-mixin {
+    color: darkviolet;
+  }
+}
+
+@media (min-width: 1800px) {
+  .breakponts-text-with-mixin {
+    background-color: coral;
+    color: #fff;
+  }
+}
+
 .text-primary {
   color: #22BABB;
 }
