@@ -2775,6 +2775,60 @@ li {
   margin: 0.75rem;
 }
 
+@media (min-width: 1800px) {
+  .card {
+    background-color: #9EF8EE;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+  .card {
+    background-color: #DBF227;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .card {
+    background-color: blue;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .card {
+    background-color: #FA7F08;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .card {
+    background-color: #F21326;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .card {
+    background-color: #038C3E;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card {
+    background-color: #F21326;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    background-color: #F24405;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .card {
+    background-color: #9EF8EE;
+  }
+}
+
 .card .card-title {
   font-size: 1rem;
   padding-bottom: 0.75rem;

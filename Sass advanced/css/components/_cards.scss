@@ -4,6 +4,33 @@
     padding:$base-padding;
     border: 1px solid map-get($colors, "primary");
     box-shadow: $base-box-shadow;
+    @media #{$over}{
+        background-color: map-get($colors, "info");
+    }
+    @media #{$xxxl}{
+        background-color: map-get($colors, "warning");
+    }
+    @media #{$xxl}{
+        background-color: map-get($colors, "blue");
+    } 
+    @media #{$xxl}{
+        background-color: $orange;
+    } 
+    @media #{$xl}{
+        background-color: $danger;
+    }
+    @media #{$lg}{
+        background-color: $success;
+    }
+    @media #{$md}{
+        background-color: $danger;
+    }
+    @media #{$xs}{
+        background-color: $secondary;
+    }
+    @media #{$sm}{
+        background-color: $info;
+    }
     margin: $base-margin;
  
     .card-title{
